@@ -1,0 +1,44 @@
+import java.util.*;
+public class ithIndexPrint {
+
+
+
+    public static void takeInput(){
+
+
+
+    }
+    public static void main(String[] args){
+        Scanner scan = new Scanner(System.in);
+        int i =  scan.nextInt();  //i want to print ith index node, index will given by user
+
+
+
+    Node<Integer> node1 = new Node<Integer>(30);
+    Node<Integer> node2 = new Node<Integer>(40);
+    Node<Integer> node3 = new Node<Integer>(48);
+    Node<Integer> node4 = new Node<Integer>(89);
+    Node<Integer> node5 = new Node<Integer>(493);
+
+    node1.next = node2;
+    node2.next = node3;
+    node3.next = node4;
+    node4.next = node5;
+
+    Node<Integer> head = node1;
+
+
+
+        while(head != null){
+            head = head.next;
+            i--;
+            if(i == 0){
+                System.out.println(head.data);
+            }
+
+
+        }
+
+    }
+
+}
